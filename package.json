@@ -19,15 +19,15 @@
   },
   "cds": {
     "requires": {
+      "[production]": {
+        "db": {
+          "kind": "hana"
+        }
+      },
       "db": {
         "kind": "sqlite",
         "credentials": {
           "url": "db.sqlite"
-        }
-      },
-      "[production]": {
-        "db": {
-          "kind": "hana"
         }
       }
     },
