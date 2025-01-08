@@ -1,0 +1,9 @@
+COLUMN TABLE my_bookshop_Authors (
+  createdAt TIMESTAMP,
+  createdBy NVARCHAR(255),
+  modifiedAt TIMESTAMP,
+  modifiedBy NVARCHAR(255),
+  ID INTEGER NOT NULL,
+  name NVARCHAR(111),
+  PRIMARY KEY(ID)
+)
