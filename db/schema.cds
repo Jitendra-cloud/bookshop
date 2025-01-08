@@ -17,12 +17,11 @@ entity Books : managed
     stock : Integer;
     price : Decimal(9,2);
     currency : Currency;
-    authors : Association to one Authors on authors.books = $self;
+    authors : Association to one Authors;
 }
 
 entity Authors : managed
 {
     key ID : Integer;
     name : String(111);
-    books : Association to one Books;
 }
